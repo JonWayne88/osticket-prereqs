@@ -28,10 +28,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-   >**Note**: Create a Windows 10 Virtual Machine with 2 or 4 virtual CPUS to ensure that you are not troubled with hiccups  and slow movement throughout the lab.
+   >**Note**: Create a Windows 10 Virtual Machine with 2 or 4 virtual CPUS to ensure that you are not troubled with slow movement or issues throughout the lab.
 Allow the VM to create a new Vnet which should be done by default.
 
-We can do a quick search for `Virtual Machine` and as we create the virtual machine, we will have the option to create the Resource Group. Here we select `Create New` to name the name the Resource Group 'RG-osTicket' and build out the Virtual Machine (VM) with the provided settings pictured (below). 
+We can do a quick search for `Virtual Machine` and as we create the virtual machine, we will have the option to create the Resource Group. Here we select `Create New` to give a name to the Resource Group 'RG-osTicket' and build out the Virtual Machine (VM) with the provided settings pictured (below). 
 
 <p align="center"><img src="https://i.imgur.com/jz0e59n.png" height="70%" width="70%" alt="image of vm settings"/> </p>
 
@@ -64,7 +64,7 @@ Once you are connected and inside the virtual machine we will need to install th
 </p>
 <br />
 
-After we've reached the next page, we can now select to `Turn Windows features on or off` --> then enable the 'Internet Information Services' (IIS) from the available services.
+After we've reached the next page, we can now select `Turn Windows features on or off` --> then enable the 'Internet Information Services' (IIS) from the available services.
 
 <p align="center">
 <img src="https://i.imgur.com/XYQQlpa.png" height="80%" width="80%" alt="enable IIS"/>
@@ -74,7 +74,7 @@ After we've reached the next page, we can now select to `Turn Windows features o
 <p align="center">
 <img src="https://i.imgur.com/59FS3S4.png" height="65%" width="65%" alt="download WebPI"/>
 <br/>
-<p> Once WebPI is installed, we can now add MySQL 5.5 database, PHP 5.6.31, and the various verisons of between PHP (x86) 7.0 and 7.3.</p>
+<p> Once WebPI is installed, we can now add MySQL 5.5 database, PHP 5.6.31, and the various verisons of PHP, (x86) 7.0 and 7.3.</p>
 <p align="center">
 <img src="https://i.imgur.com/SwHYmt7.png" height="650%" width="65%" alt="image of add MySql"/>
 </p>
@@ -83,7 +83,7 @@ After we've reached the next page, we can now select to `Turn Windows features o
 <img src="https://i.imgur.com/DwQqpH8.png" height="65%" width="65%" alt="install PHP"/>
 </p>
 <br/>
-<p>MySQL 5.5 will require a name and password, root and Password1 respectively when you try to install. Make note of the name / password in a text file as you will need it again later on in the installation process.</p>
+<p>MySQL 5.5 will require a name and password, root and Password1 respectively when you try to install. Make note of the name / password in a text file as you will need it again later on in the installation process. I forgot mine and had to restart the whole process!</p>
 <p align="center">
 <img src="https://i.imgur.com/IIFCRPG.png" height="65%" width="65%" alt="password request"/>
 </p>
@@ -124,13 +124,13 @@ Next we'll go back to IIS, sites -> Default -> 1. `osTicket` 2. Double-click `PH
  <img src="https://i.imgur.com/cMtCuaA.png" height="45%" width="45%" alt="php extension enabled"/>
  </p>
  <br/>
-Refresh the osTicket site in your browser to see what has changed after enabling the PHP extensions  
+Refresh the osTicket site in your browser to see what has changed after enabling the PHP extensions. You should see some pretty green check marks.   
 <p align="center">
 <img src="https://i.imgur.com/PPNziV5.png" height="45%" width="45%" alt="refreshed osticket installer"/>
  </p>
  <br/>
  
-Rename: From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` --->	To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
+Rename: From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` --->	To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php'.
  
  <p align="center">
  <img src="https://i.imgur.com/u0bCrDC.png" height="50%" width="50%" alt="ost-sample image"/>
@@ -140,7 +140,7 @@ Rename: From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` --->	To
  </p>
 <hr>
 
-Assign Permissions: ost-config.php 
+Assign Permissions to ost-config.php. 
  To change the permissions, right-click ost-config --> select '`properties`' --> select the '`Security`' tab at the top --> select the '`Advanced`' button1. Disable inheritance -> Remove All 2. New Permissions -> Everyone -> All
  
  <p align="center">
@@ -233,12 +233,7 @@ Set Permission to "`Read`" only can be acheived by choosing to right-click on '`
  <p align="center">
  <img src="https://i.imgur.com/R11rIMd.png"  height="65%" width="65%" alt="read-only allow is shown for osticketcong file"/>
  </p>
- <br/>
  
- <p align="center"><i><b>💥Well, That's All Folks and Congratulations On The Completion of This Lab! 😁</i></b></p>
- <p align="center"><i><b>📝 “You don’ have to see the whole staircase. Just take the first step.”📝</p></i></b>
- 
- <br />
  <br />
  <p align="right"> Next Up <a href="https://github.com/JonWayne88/post-install-config"> OSTicket Post Install Configuration </a></p>
 
