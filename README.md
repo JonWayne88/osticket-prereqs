@@ -76,13 +76,8 @@ After we've reached the next page, we can now select `Turn Windows features on o
 <p align="center">
 </p>
 </br>
-<p align="center">
 </p>
-<br/>
 <p>MySQL 5.5 will require a name and password, root and Password1 respectively when you try to install. Make note of the name / password in a text file as you will need it again later on in the installation process. I forgot mine and had to restart the whole process!</p>
-<p align="center">
-<img src="https://i.imgur.com/IIFCRPG.png" height="65%" width="65%" alt="password request"/>
-</p>
 <p>If necessary, fix any failures (download from within lab files:
 Fix any failures in the installation by going to Google Drive to <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">download </a> and install PHP 7.3.8, PHP Manager, and Microsoft Visual C++ 2009 Redistributable Package.
 </p>
