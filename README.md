@@ -20,7 +20,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Connect to your Virtual Machine with Remote Desktop
 - Install / Enable IIS in Windows
 - Install Web Platform Installer
-- Install osTicket v1.15.8
+- Install osTicket 
 - Download and Install HeidiSQL
 - Created database for "osTicket
 - Clean up 
