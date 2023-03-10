@@ -70,17 +70,13 @@ After we've reached the next page, we can now select `Turn Windows features on o
 <img src="https://i.imgur.com/XYQQlpa.png" height="80%" width="80%" alt="enable IIS"/>
 </p>
 <br/>
-<p>Now we can download and install Web Platform Installers. Web Platform Installers (WebPI) provides a simplified installation workflow for installing common open source web applications and web platform technologies.</p>
+<p>Now we can download and the necessary programs needed from Google Drive <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">download </a> </p>
 <p align="center">
-<img src="https://i.imgur.com/59FS3S4.png" height="65%" width="65%" alt="download WebPI"/>
-<br/>
-<p> Once WebPI is installed, we can now add MySQL 5.5 database, PHP 5.6.31, and the various verisons of PHP, (x86) 7.0 and 7.3.</p>
+<p> Once installed, we can now add MySQL 5.5 database, PHP 5.6.31, and the various verisons of PHP, (x86) 7.0 and 7.3.</p>
 <p align="center">
-<img src="https://i.imgur.com/SwHYmt7.png" height="650%" width="65%" alt="image of add MySql"/>
 </p>
 </br>
 <p align="center">
-<img src="https://i.imgur.com/DwQqpH8.png" height="65%" width="65%" alt="install PHP"/>
 </p>
 <br/>
 <p>MySQL 5.5 will require a name and password, root and Password1 respectively when you try to install. Make note of the name / password in a text file as you will need it again later on in the installation process. I forgot mine and had to restart the whole process!</p>
